@@ -178,12 +178,13 @@ export default function HomePage() {
             style={{ position: 'relative', paddingRight: '20px', paddingBottom: '20px' }}
           >
             <div className="photo-frame" style={{ width: '100%', maxWidth: '420px' }}>
-              <div style={{ aspectRatio: '3/4', background: 'var(--slate-mid)', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', zIndex: 1 }}>
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" opacity={0.25}>
-                  <rect x="3" y="3" width="18" height="18" rx="2" stroke="#C9A84C" strokeWidth="1"/>
-                  <circle cx="12" cy="10" r="3" stroke="#C9A84C" strokeWidth="1"/>
-                  <path d="M6 20c0-3.31 2.686-6 6-6s6 2.69 6 6" stroke="#C9A84C" strokeWidth="1"/>
-                </svg>
+              <div style={{ aspectRatio: '3/4', width: '100%', maxWidth: '420px', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img 
+                  src="/profil.jpg" 
+                  alt="Avukat Bekir Kara" 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
               </div>
               {/* Badge */}
               <div style={{ position: 'absolute', bottom: '24px', left: '-16px', background: 'var(--gold)', padding: '12px 20px', zIndex: 2 }}>
