@@ -61,7 +61,7 @@ const testimonials = [
 const whyItems = [
   { num: '01', title: 'Kişisel İlgi', desc: 'Her müvekkilimize özel strateji geliştiriyor, bireysel ihtiyaçlarınızı her zaman ön planda tutuyoruz.' },
   { num: '02', title: 'Şeffaf İletişim', desc: 'Süreç boyunca her gelişmeden sizi haberdar ediyor, sorularınızı sabırla yanıtlıyoruz.' },
-  { num: '03', title: '24s Dönüş', desc: '24 saat içinde dönüş garantisi ile acil hukuki ihtiyaçlarınızda her zaman yanınızdayız.' },
+  { num: '03', title: '24 Saatte Dönüş', desc: '24 saat içinde dönüş garantisi ile acil hukuki ihtiyaçlarınızda her zaman yanınızdayız.' },
   { num: '04', title: 'Gizlilik Güvencesi', desc: 'Tüm müvekkil bilgileri KVKK kapsamında en yüksek gizlilik standartlarıyla korunmaktadır.' },
 ];
 
@@ -365,7 +365,7 @@ export default function HomePage() {
               Hukuki Sorununuz İçin<br />Hemen Başvurun
             </h2>
             <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '15px', color: 'rgba(12,18,25,0.7)', marginBottom: '40px', maxWidth: '480px', margin: '0 auto 40px', lineHeight: 1.75 }}>
-              İlk görüşme ücretsizdir. Sorununuzu dinleyor, en kısa sürede çözüm yolunuzu belirliyoruz.
+              İlk görüşme ücretsizdir. Sorununuzu dinliyor, en kısa sürede çözüm yolunuzu belirliyoruz.
             </p>
             <Link href="/iletisim" style={{ background: 'var(--ink)', color: 'var(--ivory)', fontFamily: 'Montserrat, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', padding: '16px 40px', display: 'inline-block', textDecoration: 'none', transition: 'all 0.25s', clipPath: 'polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px))' }}>
               Ücretsiz Danışma Al

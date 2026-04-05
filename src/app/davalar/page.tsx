@@ -38,7 +38,7 @@ const resultStyle: Record<CaseResult, React.CSSProperties> = {
 const caseStats = [
   { value: '%94', label: 'Başarı Oranı' },
   { value: '500+', label: 'Tamamlanan Dava' },
-  { value: '15', label: 'Yıl Deneyim' },
+  { value: '15', label: 'Yıllık Deneyim' },
 ];
 
 export default function DavalarPage() {

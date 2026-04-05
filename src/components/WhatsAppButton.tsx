@@ -30,7 +30,7 @@ export default function WhatsAppButton() {
               letterSpacing: '0.08em',
             }}
           >
-            Ücretsiz Danış
+            Ücretsiz Danışma
           </motion.div>
         )}
       </AnimatePresence>

@@ -151,7 +151,7 @@ export default function HakkimdaPage() {
             Hukuki Desteğe İhtiyacınız mı Var?
           </h2>
           <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '15px', color: 'var(--ivory-dim)', maxWidth: '480px', margin: '0 auto 40px', lineHeight: 1.75 }}>
-            İlk görüşme ücretsizdir. Bugün iletişime geçin, davranızın en iyi şekilde yönetilmesini sağlayalım.
+            İlk görüşme ücretsizdir. Bugün iletişime geçin, davanızın en iyi şekilde yönetilmesini sağlayalım.
           </p>
           <Link href="/iletisim" className="btn-primary">Randevu Al</Link>
         </div>

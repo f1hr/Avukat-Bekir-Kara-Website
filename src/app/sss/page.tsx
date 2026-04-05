@@ -15,8 +15,8 @@ const faqCategories = [
     title: 'Genel Sorular',
     items: [
       { q: 'İlk görüşme ücretli mi?', a: 'Hayır, ilk görüşme tamamen ücretsizdir. Davanızı dinliyor, hukuki durumunuzu değerlendiriyor ve size en uygun çözüm yolunu belirliyoruz.' },
-      { q: 'Avukatınızla nasıl iletişim kurarsınız?', a: 'Telefon, e-posta, WhatsApp veya ofisimizden randevu alarak yüz yüze görüşme yapabilirsiniz. 24 saat içinde dönüş garantisi veriyoruz.' },
-      { q: 'Hangi şehirlerde hizmet veriyorsunuz?', a: 'Büromuz İstanbul\'da faaliyet göstermekle birlikte, yurt genelindeki davalarda da temsil hizmeti sunmaktayız. Uzak şehirlerdeki müvekkillere online danışmanlık da sağlıyoruz.' },
+      { q: 'Avukatınızla nasıl iletişim kurabilirsiniz?', a: 'Telefon, e-posta, WhatsApp veya ofisimizden randevu alarak yüz yüze görüşme yapabilirsiniz. 24 saat içinde dönüş garantisi veriyoruz.' },
+      { q: 'Hangi şehirlerde hizmet veriyorsunuz?', a: 'Büromuz İstanbul\'da faaliyet göstermekle birlikte, yurt genelindeki davalarda da temsil hizmeti sunmaktayız. Uzak şehirlerdeki müvekkillere çevrim içi danışmanlık da sağlıyoruz.' },
       { q: 'Dava süreçleri ne kadar sürer?', a: 'Dava süreleri hukuki konuya, mahkeme yoğunluğuna ve davanın karmaşıklığına göre değişir. Basit davalar birkaç ay içinde sonuçlanabilirken, ağır ceza davaları yıllar sürebilir.' },
     ],
   },
@@ -34,7 +34,7 @@ const faqCategories = [
     items: [
       { q: 'Danışmanlık randevusu nasıl alınır?', a: 'Telefon, e-posta, WhatsApp veya web sitemizin iletişim formunu kullanarak randevu alabilirsiniz. Uygun saatlerde sizinle iletişime geçeceğiz.' },
       { q: 'Belgelerimi nasıl iletebilirim?', a: 'Belgelerinizi ofisimize bizzat getirebilir, e-posta ile gönderebilir veya şifreli dijital platform üzerinden paylaşabilirsiniz. Gizlilik ve güvenlik önceliğimizdir.' },
-      { q: 'Dava dosyamı online takip edebilir miyim?', a: 'Evet, müvekkillerimiz dava süreçlerini takip edebildikleri dijital platforma erişim sağlayabilmektedir. Sisteme giriş bilgileri kayıt sırasında tarafınıza iletilir.' },
+      { q: 'Dava dosyamı çevrim içi takip edebilir miyim?', a: 'Evet, müvekkillerimiz dava süreçlerini takip edebildikleri dijital platforma erişim sağlayabilmektedir. Sisteme giriş bilgileri kayıt sırasında tarafınıza iletilir.' },
       { q: 'Acil durumlarda nasıl ulaşabilirim?', a: 'Acil hukuki durumlarda 7/24 ulaşabileceğiniz acil hattımızı arayabilirsiniz. WhatsApp üzerinden de anlık iletişim kurulabilmektedir.' },
     ],
   },
