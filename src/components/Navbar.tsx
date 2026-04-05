@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { siteConfig } from '@/config/site';
 
 const navLinks = [
   { label: 'Ana Sayfa', href: '/' },
@@ -73,10 +74,10 @@ export default function Navbar() {
           </div>
 
           <div className="hidden-mobile" style={{ alignItems: 'center', gap: '20px' }}>
-            <a href="tel:+902125550123" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '9px', fontWeight: 500, color: 'rgba(240,232,214,0.55)', textDecoration: 'none', letterSpacing: '0.08em', transition: 'color 0.2s' }}
+            <a href={`tel:${siteConfig.lawyer.whatsapp}`} style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '9px', fontWeight: 500, color: 'rgba(240,232,214,0.55)', textDecoration: 'none', letterSpacing: '0.08em', transition: 'color 0.2s' }}
               onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--gold)')}
               onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(240,232,214,0.55)')}>
-              +90 212 555 01 23
+              {siteConfig.lawyer.phone}
             </a>
             <Link href="/iletisim" className="btn-primary" style={{ padding: '10px 22px', fontSize: '9px' }}>Randevu Al</Link>
           </div>

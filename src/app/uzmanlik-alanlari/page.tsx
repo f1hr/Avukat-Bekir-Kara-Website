@@ -26,7 +26,7 @@ export default function UzmanlikAlanlariPage() {
       />
 
       {/* ─── Intro ─── */}
-      <section style={{ background: 'var(--parchment)', padding: '72px 0' }}>
+      <section className="sec-pad" style={{ background: 'var(--parchment)', padding: '72px 0' }}>
         <div className="container-max" style={{ textAlign: 'center', padding: '0 32px', maxWidth: '720px' }}>
           <div className="label-tag" style={{ justifyContent: 'center', marginBottom: '20px' }}>Hukuki Hizmetlerimiz</div>
           <h2 style={{ fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: 'clamp(32px,4vw,48px)', fontWeight: 700, color: 'var(--ink)', marginBottom: '20px' }}>
@@ -39,9 +39,9 @@ export default function UzmanlikAlanlariPage() {
       </section>
 
       {/* ─── Practice Areas Grid ─── */}
-      <section style={{ background: 'var(--ink)', padding: '96px 0' }}>
+      <section className="sec-pad" style={{ background: 'var(--ink)', padding: '96px 0' }}>
         <div className="container-max" style={{ padding: '0 32px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '24px' }}>
+          <div className="mob-stack" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '24px' }}>
             {siteConfig.practiceAreas.map((area, i) => (
               <motion.div
                 key={area.id}

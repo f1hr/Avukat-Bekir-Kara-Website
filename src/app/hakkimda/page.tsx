@@ -31,9 +31,9 @@ export default function HakkimdaPage() {
       />
 
       {/* ─── Biyografi ─── */}
-      <section style={{ background: 'var(--parchment)', padding: '96px 0' }}>
-        <div className="container-max" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'start', padding: '0 32px' }}>
-          <motion.div initial={{ opacity: 0, x: -24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} style={{ paddingRight: '20px', paddingBottom: '20px' }}>
+      <section className="sec-pad" style={{ background: 'var(--parchment)', padding: '96px 0' }}>
+        <div className="container-max mob-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'start', padding: '0 32px' }}>
+          <motion.div className="mob-photo" initial={{ opacity: 0, x: -24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} style={{ paddingRight: '20px', paddingBottom: '20px' }}>
             <div className="photo-frame">
               <div style={{ aspectRatio: '3/4', background: 'var(--slate-mid)', width: '100%', maxWidth: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', zIndex: 1 }}>
                 <svg width="64" height="64" viewBox="0 0 24 24" fill="none" opacity={0.2}>
@@ -74,7 +74,7 @@ export default function HakkimdaPage() {
       </section>
 
       {/* ─── Timeline ─── */}
-      <section style={{ background: 'var(--ink)', padding: '96px 0' }}>
+      <section className="sec-pad" style={{ background: 'var(--ink)', padding: '96px 0' }}>
         <div className="container-max" style={{ padding: '0 32px' }}>
           <div style={{ textAlign: 'center', marginBottom: '64px' }}>
             <div className="label-tag" style={{ justifyContent: 'center', marginBottom: '20px' }}>Kariyer Yolculuğu</div>
@@ -85,11 +85,12 @@ export default function HakkimdaPage() {
 
           <div style={{ position: 'relative', maxWidth: '800px', margin: '0 auto' }}>
             {/* Center line */}
-            <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '1px', background: 'rgba(201,168,76,0.2)', transform: 'translateX(-50%)' }} />
+            <div className="timeline-center-line" style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '1px', background: 'rgba(201,168,76,0.2)', transform: 'translateX(-50%)' }} />
 
             {timelineItems.map((item, i) => (
               <motion.div
                 key={item.year}
+                className="timeline-item"
                 initial={{ opacity: 0, x: i % 2 === 0 ? -32 : 32 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -97,7 +98,7 @@ export default function HakkimdaPage() {
                 style={{ display: 'flex', justifyContent: i % 2 === 0 ? 'flex-end' : 'flex-start', paddingRight: i % 2 === 0 ? 'calc(50% + 32px)' : 0, paddingLeft: i % 2 !== 0 ? 'calc(50% + 32px)' : 0, marginBottom: '48px', position: 'relative' }}
               >
                 {/* Dot */}
-                <div style={{ position: 'absolute', left: '50%', top: '12px', width: '10px', height: '10px', background: 'var(--gold)', borderRadius: '50%', transform: 'translateX(-50%)', border: '2px solid var(--ink)', boxShadow: '0 0 0 3px rgba(201,168,76,0.3)' }} />
+                <div className="timeline-dot" style={{ position: 'absolute', left: '50%', top: '12px', width: '10px', height: '10px', background: 'var(--gold)', borderRadius: '50%', transform: 'translateX(-50%)', border: '2px solid var(--ink)', boxShadow: '0 0 0 3px rgba(201,168,76,0.3)' }} />
                 <div className="card-dark" style={{ maxWidth: '320px', width: '100%' }}>
                   <div style={{ fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: '28px', fontWeight: 600, color: 'var(--gold)', lineHeight: 1, marginBottom: '8px' }}>{item.year}</div>
                   <h4 style={{ fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: '18px', fontWeight: 700, color: 'var(--ivory)', marginBottom: '4px' }}>{item.title}</h4>
@@ -113,7 +114,7 @@ export default function HakkimdaPage() {
       </section>
 
       {/* ─── Sertifikalar ─── */}
-      <section style={{ background: 'var(--parchment)', padding: '96px 0' }}>
+      <section className="sec-pad" style={{ background: 'var(--parchment)', padding: '96px 0' }}>
         <div className="container-max" style={{ padding: '0 32px' }}>
           <div style={{ textAlign: 'center', marginBottom: '56px' }}>
             <div className="label-tag" style={{ justifyContent: 'center', marginBottom: '20px' }}>Belgeler</div>
@@ -121,7 +122,7 @@ export default function HakkimdaPage() {
               Sertifikalar & Üyelikler
             </h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '20px' }}>
+          <div className="mob-stack" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '20px' }}>
             {certificates.map((cert, i) => (
               <motion.div
                 key={cert}
@@ -142,7 +143,7 @@ export default function HakkimdaPage() {
       </section>
 
       {/* ─── CTA ─── */}
-      <section style={{ background: 'var(--ink)', padding: '96px 0', textAlign: 'center' }}>
+      <section className="sec-pad" style={{ background: 'var(--ink)', padding: '96px 0', textAlign: 'center' }}>
         <div className="container-max" style={{ padding: '0 32px' }}>
           <div className="label-tag" style={{ justifyContent: 'center', marginBottom: '20px' }}>Başlayalım</div>
           <h2 style={{ fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: 'clamp(32px,4vw,48px)', fontWeight: 700, color: 'var(--ivory)', marginBottom: '16px' }}>

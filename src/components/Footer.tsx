@@ -17,7 +17,7 @@ export default function Footer() {
       <div style={{ width: '100%', height: '1px', background: 'linear-gradient(90deg, transparent, rgba(201,168,76,0.5), transparent)' }} />
 
       <div style={{ background: 'var(--ink)', padding: '64px 0 48px' }}>
-        <div className="container-max" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '48px', padding: '0 32px' }}>
+        <div className="container-max footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '48px', padding: '0 32px' }}>
 
           {/* Col 1 */}
           <div>

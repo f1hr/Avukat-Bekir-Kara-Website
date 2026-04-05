@@ -50,7 +50,7 @@ export default function SSSPage() {
       />
 
       {/* ─── FAQ Section ─── */}
-      <section style={{ background: 'var(--parchment)', padding: '96px 0' }}>
+      <section className="sec-pad" style={{ background: 'var(--parchment)', padding: '96px 0' }}>
         <div className="container-max" style={{ padding: '0 32px', maxWidth: '900px' }}>
           {faqCategories.map((cat, ci) => (
             <motion.div

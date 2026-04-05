@@ -84,7 +84,7 @@ export default function HomePage() {
   return (
     <>
       {/* ════════════════ HERO ════════════════ */}
-      <section style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden', padding: '140px 32px 100px', textAlign: 'center', background: 'var(--ink)' }}>
+      <section className="hero-section" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden', padding: '140px 32px 100px', textAlign: 'center', background: 'var(--ink)' }}>
         {/* SVG grid overlay */}
         <div style={{ position: 'absolute', inset: 0, backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C9A84C' stroke-width='0.4' opacity='0.06'%3E%3Cpath d='M0 0h80v80H0zM0 20h80M0 40h80M0 60h80M20 0v80M40 0v80M60 0v80'/%3E%3C/g%3E%3C/svg%3E")`, pointerEvents: 'none' }} />
         {/* Decorative circles */}
@@ -169,8 +169,8 @@ export default function HomePage() {
       </section>
 
       {/* ════════════════ ABOUT ════════════════ */}
-      <section style={{ background: 'var(--parchment)', padding: 'var(--space-7) 0' }}>
-        <div className="container-max" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center', padding: '0 var(--space-4)' }}>
+      <section className="sec-pad" style={{ background: 'var(--parchment)', padding: 'var(--space-7) 0' }}>
+        <div className="container-max mob-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center', padding: '0 var(--space-4)' }}>
           {/* Photo */}
           <motion.div
             initial={{ opacity: 0, x: -32 }} whileInView={{ opacity: 1, x: 0 }}
@@ -229,7 +229,7 @@ export default function HomePage() {
       </section>
 
       {/* ════════════════ PRACTICE AREAS ════════════════ */}
-      <section style={{ background: 'var(--ink)', padding: 'var(--space-7) 0' }}>
+      <section className="sec-pad" style={{ background: 'var(--ink)', padding: 'var(--space-7) 0' }}>
         <div className="container-max" style={{ padding: '0 var(--space-4)' }}>
           <div style={{ textAlign: 'center', marginBottom: '60px' }}>
             <div className="label-tag" style={{ justifyContent: 'center', marginBottom: '20px' }}>Neler Yapıyoruz</div>
@@ -238,7 +238,7 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '24px', marginBottom: '48px' }}>
+          <div className="mob-stack" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '24px', marginBottom: '48px' }}>
             {preview.map((area, i) => (
               <motion.div
                 key={area.id}
@@ -281,8 +281,8 @@ export default function HomePage() {
       </section>
 
       {/* ════════════════ WHY US ════════════════ */}
-      <section style={{ background: 'var(--parchment)', padding: 'var(--space-7) 0' }}>
-        <div className="container-max" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'start', padding: '0 var(--space-4)' }}>
+      <section className="sec-pad" style={{ background: 'var(--parchment)', padding: 'var(--space-7) 0' }}>
+        <div className="container-max mob-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'start', padding: '0 var(--space-4)' }}>
           {/* Left */}
           <motion.div initial={{ opacity: 0, x: -24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <div className="label-tag" style={{ marginBottom: '20px' }}>Neden Biz</div>
@@ -313,7 +313,7 @@ export default function HomePage() {
       </section>
 
       {/* ════════════════ TESTIMONIALS ════════════════ */}
-      <section style={{ background: 'var(--ink)', padding: 'var(--space-7) 0' }}>
+      <section className="sec-pad" style={{ background: 'var(--ink)', padding: 'var(--space-7) 0' }}>
         <div className="container-max" style={{ padding: '0 var(--space-4)' }}>
           <div style={{ textAlign: 'center', marginBottom: 'var(--space-6)' }}>
             <div className="label-tag" style={{ justifyContent: 'center', marginBottom: 'var(--space-2)' }}>Müvekkillerimiz</div>
@@ -322,7 +322,7 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 'var(--space-3)' }}>
+          <div className="mob-stack" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 'var(--space-3)' }}>
             {testimonials.map((t, i) => (
               <motion.div
                 key={i}

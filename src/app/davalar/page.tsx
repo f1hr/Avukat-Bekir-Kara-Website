@@ -83,9 +83,9 @@ export default function DavalarPage() {
       </section>
 
       {/* ─── Cases ─── */}
-      <section style={{ background: 'var(--parchment)', padding: '64px 0 96px' }}>
+      <section className="sec-pad" style={{ background: 'var(--parchment)', padding: '64px 0 96px' }}>
         <div className="container-max" style={{ padding: '0 32px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '24px' }}>
+          <div className="mob-stack" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '24px' }}>
             {filtered.map((c, i) => (
               <motion.div
                 key={c.id}
@@ -118,7 +118,7 @@ export default function DavalarPage() {
 
       {/* ─── Stats Strip ─── */}
       <section style={{ background: 'var(--ink)', padding: '48px 0', borderTop: '1px solid rgba(201,168,76,0.15)' }}>
-        <div className="container-max" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', padding: '0 32px' }}>
+        <div className="container-max mob-stack" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', padding: '0 32px' }}>
           {caseStats.map((stat, i) => (
             <div key={i} style={{ textAlign: 'center', position: 'relative' }}>
               {i > 0 && <div style={{ position: 'absolute', left: 0, top: '20%', bottom: '20%', width: '1px', background: 'rgba(201,168,76,0.2)' }} />}

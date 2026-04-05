@@ -90,8 +90,8 @@ export default function IletisimPage() {
       />
 
       {/* ─── 2-col Contact ─── */}
-      <section style={{ background: 'var(--parchment)', padding: '96px 0' }}>
-        <div className="container-max" style={{ display: 'grid', gridTemplateColumns: '1fr 1.4fr', gap: '80px', alignItems: 'start', padding: '0 32px' }}>
+      <section className="sec-pad" style={{ background: 'var(--parchment)', padding: '96px 0' }}>
+        <div className="container-max mob-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1.4fr', gap: '80px', alignItems: 'start', padding: '0 32px' }}>
 
           {/* Left: Contact Info */}
           <motion.div initial={{ opacity: 0, x: -24 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
@@ -151,7 +151,7 @@ export default function IletisimPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+                  <div className="mob-form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                     <div>
                       <label style={{ display: 'block', fontFamily: 'Montserrat, sans-serif', fontSize: '9px', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '6px' }}>Ad Soyad *</label>
                       <input
